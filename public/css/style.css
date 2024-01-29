@@ -25,7 +25,7 @@ a {
   border: 2px solid white;
   padding: 10px 26px 10px 26px;
   font-size: 0.92rem;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 6px;
   font-family: "Poppins", sans-serif;
 }
@@ -82,6 +82,41 @@ nav button {
   font-weight: 500;
   letter-spacing: 0.13rem;
   margin-left: 76px;
+}
+
+header {
+  padding-top: 100px;
+  height: 143vh;
+  background-color: rgba(121, 43, 217, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51vh;
+  padding-left: 12.5em;
+  padding-right: 12.5em;
+}
+
+.headerTitle {
+  width: 460px;
+  height: auto;
+  padding-top: 6.9em;
+}
+.headerTitle h1 {
+  font-size: 3.4rem;
+  color: white;
+  line-height: 4.2rem;
+  margin-bottom: 2.2rem;
+}
+.headerTitle button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px 30px 8px 30px;
+}
+
+.headerImg {
+  padding-top: 10px;
+}
+.headerImg img {
+  height: 480px;
 }
 
 /*# sourceMappingURL=style.css.map */
