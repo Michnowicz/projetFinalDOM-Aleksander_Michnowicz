@@ -30,6 +30,17 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+.btnColor {
+  color: white;
+  background-color: #935de4;
+  border: none;
+  padding: 10px 50px 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
 nav {
   background-color: rgba(62, 47, 192, 0.7882352941);
   color: white;
@@ -117,6 +128,45 @@ header {
 }
 .headerImg img {
   height: 480px;
+}
+
+.voluptatem {
+  width: auto;
+  height: 110vh;
+  display: flex;
+  padding: 124px 72px 0 74px;
+}
+
+.voluptatemText h2 {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+}
+.voluptatemText .voluptatemP1 {
+  margin-top: 10px;
+  font-size: 0.945rem;
+}
+.voluptatemText div {
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+.voluptatemText div p {
+  font-size: 1.14rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1.2rem;
+  line-height: 1.5rem;
+}
+.voluptatemText div p i {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+.voluptatemImg img {
+  height: 440px;
+}
+
+.numbers {
+  background-image: url("../img/counts-bg.png");
+  height: 52vh;
 }
 
 /*# sourceMappingURL=style.css.map */
