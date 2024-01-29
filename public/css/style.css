@@ -167,6 +167,24 @@ header {
 .numbers {
   background-image: url("../img/counts-bg.png");
   height: 52vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16%;
+}
+
+.numbersContainer {
+  color: white;
+}
+.numbersContainer p {
+  text-align: center;
+}
+.numbersContainer p:first-of-type {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.numbersContainer p:last-of-type {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
