@@ -1,3 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
 
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btnWhite {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  padding: 10px 26px 10px 26px;
+  font-size: 0.92rem;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: rgba(62, 47, 192, 0.7882352941);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 28px 0px 28px 0px;
+}
+nav a {
+  color: white;
+}
+nav button {
+  margin-right: 76px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.navbar .bar {
+  display: flex;
+  gap: 1.9rem;
+  font-weight: bold;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+.navbar ul a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.navbar ul a .arrow {
+  height: 7px;
+  width: 7px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  rotate: 45deg;
+}
+.navbar ul li {
+  display: none;
+}
+
+.navIcon {
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0.13rem;
+  margin-left: 76px;
+}
 
 /*# sourceMappingURL=style.css.map */
