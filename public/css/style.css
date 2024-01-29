@@ -41,6 +41,18 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+.title {
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.underline {
+  background-color: #5846f9;
+  height: 4px;
+  width: 52px;
+  margin-top: 12px;
+}
+
 nav {
   background-color: rgba(62, 47, 192, 0.7882352941);
   color: white;
@@ -180,11 +192,64 @@ header {
   text-align: center;
 }
 .numbersContainer p:first-of-type {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 .numbersContainer p:last-of-type {
   font-size: 0.9rem;
+}
+
+.services {
+  background-color: red;
+  height: 220vh;
+}
+.services .servicesTitle {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .servicesTitle .titleP1 {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 76px 0 76px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+.services .servicesContainers {
+  margin-top: 30px;
+  background-color: blue;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.services .servicesContainers .sContainer {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 20px 90px 20px;
+}
+.services .servicesContainers .sContainer img:first-child {
+  height: 30px;
+}
+.services .servicesContainers .sContainer i {
+  font-size: 1.2rem;
+}
+.services .servicesContainers .sContainer p:first-of-type {
+  margin-top: 48px;
+  font-size: 1.5rem;
+}
+.services .servicesContainers .sContainer p:last-of-type {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.85rem;
 }
 
 /*# sourceMappingURL=style.css.map */
