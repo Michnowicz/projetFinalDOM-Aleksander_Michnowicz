@@ -1,0 +1,69 @@
+
+.faq
+    background: $bgPurple
+    padding: 100px 64px 120px 64px
+    
+    .faqTitle
+        display: flex
+        flex-direction: column
+        align-items: center
+        .title
+            color: white
+        .underline
+            background-color: $borderPurple
+        p
+            font-family: $roboto
+            margin-top: 20px
+            text-align: center
+            font-size: 1.1rem
+            color: white
+    
+    .cards
+        padding: 36px 116px 0 116px
+        display: flex
+        flex-direction: column
+        gap: 18px
+        .card  
+            background-color: white
+            border-radius: 6px
+            padding-bottom: 32px
+            div
+                .cardTitle
+                    display: flex
+                    margin: 32px 0 0 24px
+                    align-items: center
+                    justify-content: space-between
+                    div
+                        &:first-of-type
+                            display: flex
+                            align-items: center          
+                            .question
+                                width: 18px
+                                aspect-ratio: 1/1
+                                border-radius: 50%
+                                border: 2.5px solid $question
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                i
+                                    color: $question
+                            p
+                                margin-left: 18px
+                                color: $fontDarkGrey
+                                font-family: $roboto
+                                font-weight: 500
+                                font-size: 1.05rem
+                    .arrow
+                        border-bottom: 2px solid $fontDarkGrey
+                        border-right: 2px solid $fontDarkGrey
+                        margin-right: 42px
+                        rotate: 45deg
+                        width: 6px
+                        aspect-ratio: 1/1
+                .cardText
+                    margin: 14px 86px 0 32px
+                    font-family: $roboto
+                    font-size: 1.11rem
+                    line-height: 1.5rem
+                    color: $fontDarkGrey
+

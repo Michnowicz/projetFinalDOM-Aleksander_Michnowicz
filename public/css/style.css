@@ -64,6 +64,10 @@ a {
   margin-top: 12px;
 }
 
+.hidden {
+  display: none;
+}
+
 nav {
   background-color: rgba(62, 47, 192, 0.7882352941);
   color: white;
@@ -404,7 +408,7 @@ header {
 
 .pricing {
   background-color: #f9f8fe;
-  padding: 100px 64px 100px 64px;
+  padding: 100px 64px 110px 64px;
 }
 .pricing .pricingTitle {
   display: flex;
@@ -526,6 +530,84 @@ header {
 .pricing .priceMainContainer .priceContainer button {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.faq {
+  background: linear-gradient(0.125turn, #5c43f5, #7a28d9);
+  padding: 100px 64px 120px 64px;
+}
+.faq .faqTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq .faqTitle .title {
+  color: white;
+}
+.faq .faqTitle .underline {
+  background-color: #c6aef6;
+}
+.faq .faqTitle p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+}
+.faq .cards {
+  padding: 36px 116px 0 116px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.faq .cards .card {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 32px;
+}
+.faq .cards .card div .cardTitle {
+  display: flex;
+  margin: 32px 0 0 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq .cards .card div .cardTitle div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.faq .cards .card div .cardTitle div:first-of-type .question {
+  width: 18px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2.5px solid #8576fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq .cards .card div .cardTitle div:first-of-type .question i {
+  color: #8576fb;
+}
+.faq .cards .card div .cardTitle div:first-of-type p {
+  margin-left: 18px;
+  color: #474747;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.faq .cards .card div .cardTitle .arrow {
+  border-bottom: 2px solid #474747;
+  border-right: 2px solid #474747;
+  margin-right: 42px;
+  rotate: 45deg;
+  width: 6px;
+  aspect-ratio: 1/1;
+}
+.faq .cards .card div .cardText {
+  margin: 14px 86px 0 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.11rem;
+  line-height: 1.5rem;
+  color: #474747;
 }
 
 /*# sourceMappingURL=style.css.map */
