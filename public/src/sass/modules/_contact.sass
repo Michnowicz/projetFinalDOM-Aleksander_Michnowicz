@@ -1,0 +1,90 @@
+
+.contact
+    background: $bgGrey
+    padding: 100px 74px 120px 74px
+    .contactTitle
+        display: flex
+        flex-direction: column
+        align-items: center
+        p
+            font-family: $roboto
+            margin-top: 24px
+            text-align: center
+            font-size: 1.1rem
+    
+    .contactBody
+        display: flex
+        flex-wrap: wrap
+        margin-top: 34px
+        gap: 24px
+        div
+            background-color: white
+            display: flex
+            flex-direction: column
+            align-items: center
+            i
+                color: $iconBlue
+                font-size: 1.8rem
+            p
+                &:first-of-type
+                    margin-top: 18px
+                    font-size: 1.25rem
+                    font-weight: bold
+                &:nth-of-type(2)
+                    font-family: $roboto
+                    margin-top: 12px
+                    font-size: 0.95rem
+
+        .contactBodyAdress
+            width: 49%
+            padding: 34px 0 34px 0
+        .contactBodyEmail
+            width: 23.5%
+            padding: 34px 0 34px 0
+        .contactBodyPhone
+            width: 23.5%
+            padding: 34px 0 34px 0
+        iframe
+            width: 49%
+            height: 410px
+        .contactBodyForm
+            width: 49%
+            padding: 34px 0 16px 0px
+            height: 360px
+            form
+                background-color: white
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                padding-left: 34px
+                padding-right: 34px
+                input
+                    padding: 12px 0 12px 14px
+                    font-size: 0.95rem
+                    border-radius: 4px
+                    border: 2px solid #e2e5e9
+                    margin-bottom: 16px
+                    font-family: $roboto
+                    &:first-of-type
+                        width: 45%
+                    &:nth-of-type(2)
+                        width: 45%
+                    &:nth-of-type(3)
+                        width: 100%
+                textarea
+                    font-family: $roboto
+                    padding: 12px 0 12px 14px
+                    font-size: 0.95rem
+                    width: 100%
+                    border-radius: 6px
+                    border: 2px solid #e2e5e9
+            .btnBlue
+                margin-top: 18px
+                border: none
+                padding: 12px 26px 12px 26px
+                font-size: 1.05rem
+                border-radius: 6px
+                font-family: $roboto
+                color: white
+                background-color: $iconBlue
