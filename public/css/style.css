@@ -260,4 +260,54 @@ header {
   padding-left: 5px;
 }
 
+.features {
+  padding: 100px 70px 100px 70px;
+}
+.features .featuresTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .featuresTitle p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.98rem;
+}
+.features .core {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.features .core .coreImg {
+  width: 51%;
+  margin-left: 24px;
+}
+.features .core .coreDiv {
+  display: flex;
+  margin-bottom: 68px;
+}
+.features .core .coreDiv:first-of-type {
+  margin-top: 8px;
+}
+.features .core .coreDiv:last-of-type {
+  margin-left: 26px;
+}
+.features .core .coreDiv img {
+  height: 50px;
+  margin-left: 6px;
+}
+.features .core .coreDiv .coreText {
+  margin-left: 12px;
+}
+.features .core .coreDiv .coreText p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.features .core .coreDiv .coreText p:nth-of-type(2) {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  font-size: 1.06rem;
+  line-height: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
