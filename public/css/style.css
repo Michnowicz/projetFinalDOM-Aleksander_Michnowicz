@@ -312,6 +312,7 @@ header {
 }
 
 .testimonials {
+  background-color: red;
   padding: 110px 80px 0 80px;
 }
 .testimonials .testimonialsTitle {
@@ -324,6 +325,70 @@ header {
   margin-top: 20px;
   text-align: center;
   font-size: 1.1rem;
+}
+.testimonials .carousel {
+  width: 100%;
+  height: 534px;
+}
+
+.tech {
+  background-color: green;
+  padding: 96px 76px 110px 76px;
+}
+.tech .techTitle {
+  text-align: left;
+  font-size: 2.15rem;
+  font-weight: 400;
+}
+.tech .techBtn {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 8px;
+}
+.tech .techBtn button {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1.2rem;
+  padding: 0 4px 8px 4px;
+  border: none;
+  border-bottom: 3px solid #b6b6bf;
+}
+.tech .techCore .coreTitle {
+  margin-top: 34px;
+}
+.tech .techCore .coreTitle p {
+  text-align: center;
+}
+.tech .techCore .coreTitle #IA {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.tech .techCore .techCoreContainer {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.tech .techCore .techCoreContainer .tcDiv {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech .techCore .techCoreContainer .tcDiv div {
+  background-color: blue;
+  height: 214px;
+  width: 314px;
+}
+.tech .techCore .techCoreContainer .tcDiv p:first-of-type {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.tech .techCore .techCoreContainer .tcDiv p:nth-of-type(2) {
+  margin-top: 4px;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
