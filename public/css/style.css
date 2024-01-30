@@ -41,6 +41,17 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+.btnGradient {
+  border: none;
+  padding: 12px 36px 12px 36px;
+  font-size: 0.92rem;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: linear-gradient(0.125turn, #5c43f5, #7a28d9);
+}
+
 .title {
   font-size: 2.1rem;
   text-align: center;
@@ -389,6 +400,132 @@ header {
 .tech .techCore .techCoreContainer .tcDiv p:nth-of-type(2) {
   margin-top: 4px;
   font-size: 1rem;
+}
+
+.pricing {
+  background-color: #f9f8fe;
+  padding: 100px 64px 100px 64px;
+}
+.pricing .pricingTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing .pricingTitle p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.pricing .pricingTitle p:last-of-type {
+  color: #bfbfbf;
+}
+.pricing .pricingBtn {
+  margin-top: 52px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.pricing .pricingBtn .btnPurple {
+  width: 64px;
+  height: 36px;
+  background-color: #8576fb;
+  border-radius: 18px;
+}
+.pricing .pricingBtn .btnPurple button {
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  aspect-ratio: 1/1;
+  position: relative;
+  left: 4px;
+}
+.pricing .pricingBtn p {
+  font-weight: bold;
+}
+.pricing .pricingBtn p:first-of-type {
+  color: #8576fb;
+}
+.pricing .priceMainContainer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  background-color: red;
+}
+.pricing .priceMainContainer .priceContainer {
+  background-color: #f8f8f8;
+  width: 320px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing .priceMainContainer .priceContainer .pct2 {
+  background-color: blue;
+  color: white;
+  width: 100%;
+}
+.pricing .priceMainContainer .priceContainer .pcTitle {
+  padding: 20px 0 20px 0px;
+}
+.pricing .priceMainContainer .priceContainer .pcTitle p {
+  border-top: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.pricing .priceMainContainer .priceContainer .pcText {
+  padding-top: 18px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+.pricing .priceMainContainer .priceContainer .pcText div {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.pricing .priceMainContainer .priceContainer .pcText div div {
+  color: #5846f9;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  right: 6px;
+}
+.pricing .priceMainContainer .priceContainer .pcText div i {
+  color: #5846f9;
+  font-size: 2.4rem;
+  position: relative;
+  right: 6px;
+  font-weight: bold;
+  font-style: italic;
+}
+.pricing .priceMainContainer .priceContainer .pcText div #zero {
+  font-style: normal;
+}
+.pricing .priceMainContainer .priceContainer .pcText div p {
+  position: relative;
+  top: 20px;
+  margin: 0 !important;
+  color: #bfbfbf;
+}
+.pricing .priceMainContainer .priceContainer .pcText p {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+}
+.pricing .priceMainContainer .priceContainer .pcText .strike {
+  text-decoration: line-through;
+  color: #bfbfbf;
+}
+.pricing .priceMainContainer .priceContainer button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
