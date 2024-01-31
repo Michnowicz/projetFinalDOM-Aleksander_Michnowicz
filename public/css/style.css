@@ -628,6 +628,17 @@ header {
   font-weight: 500;
   text-align: center;
 }
+.pricing .priceMainContainer .priceContainer .pcTitle .banner {
+  position: relative;
+  left: 122px;
+  bottom: 28px;
+  background-color: #5846f9;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  rotate: 45deg;
+  padding: 4px 32px 4px 38px;
+  font-size: 0.9rem;
+}
 .pricing .priceMainContainer .priceContainer .pcText {
   padding-top: 18px;
   padding-bottom: 42px;
