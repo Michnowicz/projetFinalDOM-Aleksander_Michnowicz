@@ -5,6 +5,10 @@ body {
   flex-direction: column;
 }
 
+button {
+  cursor: pointer;
+}
+
 p {
   margin: 0;
 }
@@ -24,6 +28,17 @@ a {
 .btnWhite {
   color: white;
   background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.6666666667);
+  padding: 10px 26px 10px 26px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btnWhite2 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   padding: 10px 26px 10px 26px;
   font-size: 0.92rem;
@@ -34,7 +49,7 @@ a {
 
 .btnColor {
   color: white;
-  background-color: #935de4;
+  background: linear-gradient(0.15turn, #5c43f5, #7a28d9);
   border: none;
   padding: 10px 50px 10px 30px;
   font-size: 1.2rem;
@@ -51,7 +66,7 @@ a {
   border-radius: 6px;
   font-family: "Poppins", sans-serif;
   color: white;
-  background: linear-gradient(0.125turn, #5c43f5, #7a28d9);
+  background: linear-gradient(0.5turn, #7a28d9, #5c43f5);
 }
 
 .title {
@@ -109,9 +124,11 @@ nav button {
 .navbar ul a .arrow {
   height: 7px;
   width: 7px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   rotate: 45deg;
+  position: relative;
+  bottom: 2px;
 }
 .navbar ul li {
   display: none;
@@ -122,6 +139,13 @@ nav button {
   font-weight: 500;
   letter-spacing: 0.13rem;
   margin-left: 76px;
+}
+
+.navHover::before {
+  width: 10px;
+  height: 4px;
+  background-color: white;
+  content: test;
 }
 
 header {
@@ -156,6 +180,8 @@ header {
 }
 .headerImg img {
   height: 480px;
+  position: relative;
+  transition: bottom 1s ease-in-out;
 }
 
 .voluptatem {
@@ -250,16 +276,29 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 110px 20px 90px 20px;
-}
-.services .servicesContainers .sContainer:nth-of-type(2) {
-  background-color: #fffaf6;
-}
-.services .servicesContainers .sContainer img:first-child {
-  height: 30px;
+  transition: background-color 0.2s ease-out;
 }
 .services .servicesContainers .sContainer i {
   font-size: 1.2rem;
   margin-top: 0.4rem;
+}
+.services .servicesContainers .sContainer .fa-keyboard {
+  color: #47aefe;
+}
+.services .servicesContainers .sContainer .fa-gamepad {
+  color: #ffb300;
+}
+.services .servicesContainers .sContainer .fa-clock {
+  color: #e80168;
+}
+.services .servicesContainers .sContainer .fa-display {
+  color: #ffbb2c;
+}
+.services .servicesContainers .sContainer .fa-building {
+  color: #ff5828;
+}
+.services .servicesContainers .sContainer .fa-mug-saucer {
+  color: #0edbce;
 }
 .services .servicesContainers .sContainer p:first-of-type {
   margin-top: 48px;
@@ -270,10 +309,7 @@ header {
   text-align: center;
   font-size: 0.85rem;
 }
-.services .servicesContainers .sContainer #sed {
-  margin-top: 66px;
-}
-.services .servicesContainers .sContainer #cardoP {
+.services .servicesContainers .sContainer #cardP {
   padding-left: 5px;
 }
 
@@ -831,6 +867,19 @@ footer .footerLink a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hoverWhite {
+  border: 2px solid #ffffff;
+}
+
+.hoverBgWhite {
+  color: #935de4;
+  background-color: white;
+}
+
+.btnColorHover {
+  background: linear-gradient(0turn, #7a28d9, #5c43f5);
 }
 
 /*# sourceMappingURL=style.css.map */

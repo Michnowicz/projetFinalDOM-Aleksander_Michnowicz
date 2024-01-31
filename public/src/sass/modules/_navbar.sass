@@ -32,9 +32,11 @@ nav
             .arrow
                 height: 7px
                 width: 7px
-                border-bottom: 1px solid white
-                border-right: 1px solid white
+                border-bottom: 2px solid white
+                border-right: 2px solid white
                 rotate: 45deg
+                position: relative
+                bottom: 2px
         li
             display: none
 
@@ -45,3 +47,10 @@ nav
     letter-spacing: 0.13rem
     margin-left: 76px
 
+
+.navHover
+    &::before
+        width: 10px
+        height: 4px
+        background-color: white
+        content: test
