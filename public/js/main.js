@@ -45,12 +45,13 @@ let colorPalette = ["#47aefe", "#ffb300", "#e80168", "#ffbb2c", "#ff5828", "#0ed
 let allServicesTitle = document.querySelectorAll(".sContainer")
 
 for (let i = 0; i < allServicesTitle.length; i++) {
+    //change bgColor and font color of each div by its index in the colorPalette
     allServicesTitle[i].addEventListener("mouseover", () => {
         let icon = allServicesTitle[i].querySelector("i")
         allServicesTitle[i].style.backgroundColor = colorPalette[i]
         allServicesTitle[i].style.color = "white"
         icon.style.color = "white"
-
+        //reset bgColor and font color
         allServicesTitle[i].addEventListener("mouseout", () => {
             allServicesTitle[i].style.backgroundColor = "white"
             allServicesTitle[i].style.color = "black"
@@ -61,8 +62,56 @@ for (let i = 0; i < allServicesTitle.length; i++) {
 }
 
 //carousel
+let carBtn = document.querySelector(".carBtn")
 
+//button click
+carBtn.addEventListener("click", (e) => {
+    let allBtnRound = document.querySelectorAll(".btnRound")
 
+    if (e.target.className.includes("btnRound")) {
+        //remove bg of other buttons
+        allBtnRound.forEach(btn => {
+            if (btn.className.includes("fill")) {
+                btn.classList.toggle("fill")
+            }
+        });
+        //add bg to target
+        e.target.classList.toggle("fill")
+    }
+
+    //translate all div
+    for (let i = 0; i < allBtnRound.length; i++) {
+        let allcarContainer = document.querySelectorAll(".carContainer")
+        let pos = 0
+        //multiply movement of each div by the index of allBtnRound
+        if (allBtnRound[i].className.includes("fill")) {
+            pos = 470*i
+            allcarContainer.forEach(carContainer => {
+                carContainer.style.right = `${pos}px`
+            });
+            console.log(pos);
+        }
+    }
+    
+})
+
+//translate each div each 8 seconds
+setInterval(() => {
+    let allcarContainer = document.querySelectorAll(".carContainer")
+    //save the position of the first div
+    let translation = parseInt(allcarContainer[0].style.right)
+
+    let pos = 0
+    if (isNaN(translation) || translation >= 1880) {
+        //if pos isNaN or is equal to the 5th button pushed
+        pos = 470 
+    } else {
+        pos = 470 + translation
+    }
+    allcarContainer.forEach(carContainer => {
+        carContainer.style.right = `${pos}px`
+    });
+}, 8000);
 
 //tech
 

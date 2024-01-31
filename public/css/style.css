@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -388,6 +392,7 @@ header {
   width: 400px;
   position: relative;
   flex-shrink: 0;
+  transition: right 0.5s ease-in-out;
 }
 .testimonials .carousel .carContainer .carText {
   background-color: white;
@@ -446,8 +451,9 @@ header {
   height: 10px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-color: white;
+  background-color: #f9f8fe;
   border: 2px solid #5846f9;
+  cursor: pointer;
 }
 
 .tech {
@@ -932,6 +938,9 @@ footer .footerLink a {
   justify-content: center;
   align-items: center;
 }
+footer .footerLink a i {
+  color: white;
+}
 
 .hoverWhite {
   border: 2px solid #ffffff;
@@ -978,6 +987,10 @@ footer .footerLink a {
 
 .hidden {
   display: none;
+}
+
+.fill {
+  background-color: #5846f9 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
