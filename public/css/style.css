@@ -160,7 +160,9 @@ nav button {
 
 header {
   height: 103vh;
-  background-color: rgba(121, 43, 217, 0.8);
+  background-image: url("../img/hero-bg.jpg");
+  background-color: #7432df;
+  background-blend-mode: multiply;
   display: flex;
   justify-content: space-between;
   padding-top: 38vh;
@@ -191,7 +193,6 @@ header {
 .headerImg img {
   height: 480px;
   position: relative;
-  transition: bottom 1s ease-in-out;
 }
 
 .voluptatem {

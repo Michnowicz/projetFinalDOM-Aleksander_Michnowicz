@@ -24,10 +24,20 @@ btnWhite2.addEventListener("mouseover", () => {
 //image hero animation
 let imgHero = document.querySelector(".headerImg img")
 
+imgHero.animate([
+    // key frames
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(-5px)' },
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(5px)' },
+    { transform: 'translateY(0px)' }
+  ], {
+    // sync options
+    duration: 4000,
+    // direction: "alternate",
+    iterations: Infinity
 
-setInterval(() => {
-    imgHero.style.bottom = "30px"
-}, 1000);
+  });
 
 
 //bouton gradient hover section voluptatem
