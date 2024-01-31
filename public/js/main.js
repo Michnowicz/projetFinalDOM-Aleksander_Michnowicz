@@ -113,7 +113,39 @@ setInterval(() => {
     });
 }, 8000);
 
+
+
 //tech
+let techBtn = document.querySelector(".techBtn")
+let alltechBtn = document.querySelectorAll(".techBtn button")
+let allTechCore = document.querySelectorAll(".techCore")
+
+techBtn.addEventListener("click", (e) => {
+    if (e.target.localName == "button") {
+        //remove border color from all div
+        alltechBtn.forEach(btn => {
+            if (btn.className == "select") {
+                btn.classList.remove("select")
+
+            }
+        });
+        
+        //add border color to target
+        e.target.classList.add("select") 
+
+        //add display to selected tab
+        for (let i = 0; i < alltechBtn.length; i++) {
+            if (alltechBtn[i].className == "select") {
+                allTechCore[i].classList.add("selected")
+            } else {
+                allTechCore[i].classList.remove("selected")
+            }
+        }
+
+    }  
+    
+})
+
 
 
 //pricing

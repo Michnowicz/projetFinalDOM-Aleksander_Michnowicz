@@ -85,6 +85,15 @@ a {
   margin-top: 12px;
 }
 
+.select {
+  border-bottom: 3px solid #444444 !important;
+}
+
+.selected {
+  position: relative !important;
+  display: block !important;
+}
+
 nav {
   background-color: rgba(62, 47, 192, 0.7882352941);
   color: white;
@@ -479,6 +488,10 @@ header {
   border: none;
   border-bottom: 3px solid #b6b6bf;
 }
+.tech .techCore {
+  position: absolute;
+  display: none;
+}
 .tech .techCore .coreTitle {
   margin-top: 34px;
 }
@@ -501,10 +514,12 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.tech .techCore .techCoreContainer .tcDiv div {
+.tech .techCore .techCoreContainer .tcDiv .tcImg {
   background-color: blue;
   height: 214px;
   width: 314px;
+  background-position: center;
+  background-size: cover;
 }
 .tech .techCore .techCoreContainer .tcDiv p:first-of-type {
   margin-top: 10px;
@@ -514,6 +529,33 @@ header {
 .tech .techCore .techCoreContainer .tcDiv p:nth-of-type(2) {
   margin-top: 4px;
   font-size: 1rem;
+}
+.tech .techCore .techCoreContainer .tcDiv #img1 {
+  background-image: url("../img/adobe.jpg");
+}
+.tech .techCore .techCoreContainer .tcDiv #img2 {
+  background-image: url("../img/gpt.jpg");
+}
+.tech .techCore .techCoreContainer .tcDiv #img3 {
+  background-image: url("../img/bard.jpg");
+}
+.tech .techCore .techCoreContainer .tcDiv #img4 {
+  background-image: url("../img/vsc.png");
+}
+.tech .techCore .techCoreContainer .tcDiv #img5 {
+  background-image: url("../img/atom.png");
+}
+.tech .techCore .techCoreContainer .tcDiv #img6 {
+  background-image: url("../img/py.jpg");
+}
+.tech .techCore .techCoreContainer .tcDiv #img7 {
+  background-image: url("../img/adobeXD.jpg");
+}
+.tech .techCore .techCoreContainer .tcDiv #img8 {
+  background-image: url("../img/figma.jpg");
+}
+.tech .techCore .techCoreContainer .tcDiv #img9 {
+  background-image: url("../img/uizard.png");
 }
 
 .pricing {

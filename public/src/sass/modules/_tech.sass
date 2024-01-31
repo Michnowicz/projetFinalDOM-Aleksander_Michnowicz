@@ -19,6 +19,8 @@
             border: none
             border-bottom: 3px solid #b6b6bf
     .techCore
+        position: absolute
+        display: none
         .coreTitle
             margin-top: 34px
             p
@@ -31,15 +33,18 @@
             display: flex
             justify-content: center
             gap: 150px
+
             .tcDiv
                 background-color: white
                 display: flex
                 flex-direction: column
-                align-items: center
-                div
+                align-items: center     
+                .tcImg
                     background-color: blue
                     height: 214px
                     width: 314px
+                    background-position: center
+                    background-size: cover
                 p
                     &:first-of-type
                         margin-top: 10px
@@ -48,4 +53,23 @@
                     &:nth-of-type(2)
                         margin-top: 4px
                         font-size: 1rem
+                #img1
+                    background-image: url("../img/adobe.jpg")
+                #img2
+                    background-image: url("../img/gpt.jpg")
+                #img3
+                    background-image: url("../img/bard.jpg")
+                #img4
+                    background-image: url("../img/vsc.png")
+                #img5
+                    background-image: url("../img/atom.png")
+                #img6
+                    background-image: url("../img/py.jpg")
+                #img7
+                    background-image: url("../img/adobeXD.jpg")
+                #img8
+                    background-image: url("../img/figma.jpg")
+                #img9
+                    background-image: url("../img/uizard.png")
+
                     
