@@ -59,3 +59,48 @@ for (let i = 0; i < allServicesTitle.length; i++) {
     })
     
 }
+
+//carousel
+
+
+
+//tech
+
+
+//pricing
+let btnPurple = document.querySelector(".btnPurple")
+
+btnPurple.addEventListener("click", (e) => {
+    
+    if (e.target == btnPurple) {
+        e.target.firstElementChild.classList.toggle("btnMove")
+        e.target.previousElementSibling.classList.toggle("purple")
+        e.target.nextElementSibling.classList.toggle("purple")
+    } else if (e.target.localName == "button") {
+        e.target.classList.toggle("btnMove")
+        e.target.parentElement.previousElementSibling.classList.toggle("purple")
+        e.target.parentElement.nextElementSibling.classList.toggle("purple")
+    }
+
+    let allp = document.querySelectorAll(".pricingBtn p")
+    let allPrice = document.querySelectorAll(".price")
+    let allNum = document.querySelectorAll(".num")
+    let tab1 = [0,19,29,49]
+    let tab2 = [0, 190, 290, 490]
+    for (let i = 0; i < allPrice.length; i++) {
+        if (allp[0].className == "purple") {
+            allNum[i].innerText = tab1[i]
+            allPrice[i].innerText = "/ month"
+        } else {
+            allNum[i].innerText = tab2[i]
+            allPrice[i].innerText = "/ year"
+        }
+    }
+})
+
+
+
+//cards
+let allCard = document.querySelectorAll(".card")
+let cards = document.querySelector(".cards")
+
