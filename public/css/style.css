@@ -81,10 +81,6 @@ a {
   margin-top: 12px;
 }
 
-.hidden {
-  display: none;
-}
-
 nav {
   background-color: rgba(62, 47, 192, 0.7882352941);
   color: white;
@@ -625,6 +621,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.05rem;
+  cursor: pointer;
 }
 .faq .cards .card div .cardTitle .arrow {
   border-bottom: 2px solid #474747;
@@ -633,6 +630,7 @@ header {
   rotate: 45deg;
   width: 6px;
   aspect-ratio: 1/1;
+  transition: rotate 0.1s;
 }
 .faq .cards .card div .cardText {
   margin: 14px 86px 0 32px;
@@ -882,7 +880,33 @@ footer .footerLink a {
 }
 
 .purple {
-  color: #8576fb;
+  color: #8576fb !important;
+}
+
+.basicGrey {
+  color: #474747 !important;
+}
+
+.blue {
+  color: #5846f9 !important;
+}
+
+.arrowGrey {
+  border-bottom: 2px solid #474747 !important;
+  border-right: 2px solid #474747 !important;
+}
+
+.arrowBlue {
+  border-bottom: 2px solid #5846f9 !important;
+  border-right: 2px solid #5846f9 !important;
+}
+
+.arrowTop {
+  rotate: -135deg !important;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

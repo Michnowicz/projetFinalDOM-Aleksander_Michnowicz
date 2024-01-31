@@ -102,5 +102,35 @@ btnPurple.addEventListener("click", (e) => {
 
 //cards
 let allCard = document.querySelectorAll(".card")
-let cards = document.querySelector(".cards")
 
+allCard.forEach(card => {
+    let cTitle = card.querySelector(".cTitle")
+    let arrow = card.querySelector(".arrow")
+    let cardText = card.querySelector(".cardText")
+
+    //couleur blueue au hover
+    card.addEventListener("mouseover", () => {
+        cTitle.classList.add("blue")
+        cTitle.classList.remove("basicGrey")
+
+        arrow.classList.add("arrowBlue")
+        arrow.classList.remove("arrowGrey")
+    })
+
+    // affiche le texte au clic
+    cTitle.addEventListener("click", () => { 
+        cardText.classList.toggle("hidden") 
+        arrow.classList.toggle("arrowTop") 
+    }) 
+
+    //enleve la couleur bleue si le texte est cahé
+    card.addEventListener("mouseout", () => {
+        if (cardText.className.includes("hidden")) {
+            cTitle.classList.remove("blue")
+            cTitle.classList.add("basicGrey")
+    
+            arrow.classList.remove("arrowBlue")
+            arrow.classList.add("arrowGrey")
+        }
+    })
+});
