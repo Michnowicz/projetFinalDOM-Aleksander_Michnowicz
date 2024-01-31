@@ -90,6 +90,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 28px 0px 28px 0px;
+  z-index: 100;
 }
 nav a {
   color: white;
@@ -362,7 +363,7 @@ header {
 
 .testimonials {
   background-color: #f9f8fe;
-  padding: 110px 80px 0 80px;
+  padding: 110px 80px 110px 80px;
 }
 .testimonials .testimonialsTitle {
   display: flex;
@@ -376,8 +377,77 @@ header {
   font-size: 1.1rem;
 }
 .testimonials .carousel {
-  width: 100%;
-  height: 534px;
+  margin-top: 40px;
+  display: flex;
+  gap: 70px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.testimonials .carousel .carContainer {
+  width: 400px;
+  position: relative;
+  flex-shrink: 0;
+}
+.testimonials .carousel .carContainer .carText {
+  background-color: white;
+  padding: 28px 20px 0px 20px;
+  height: 200px;
+}
+.testimonials .carousel .carContainer .carText i {
+  font-size: 0.95rem;
+}
+.testimonials .carousel .carContainer .carText i .fa-solid {
+  color: #b1a9fc;
+  font-size: 1.6rem;
+  position: relative;
+}
+.testimonials .carousel .carContainer .carText i .fa-solid:first-of-type {
+  bottom: 4px;
+}
+.testimonials .carousel .carContainer .carText i .fa-solid:last-of-type {
+  top: 12px;
+}
+.testimonials .carousel .carContainer .carName {
+  padding-left: 30px;
+}
+.testimonials .carousel .carContainer .carName div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 90px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  bottom: 38px;
+}
+.testimonials .carousel .carContainer .carName div img {
+  height: 88px;
+}
+.testimonials .carousel .carContainer .carName p {
+  position: relative;
+}
+.testimonials .carousel .carContainer .carName p:nth-of-type(1) {
+  font-weight: bold;
+  bottom: 30px;
+  font-size: 1.2rem;
+}
+.testimonials .carousel .carContainer .carName p:nth-of-type(2) {
+  bottom: 30px;
+}
+.testimonials .carBtn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.testimonials .carBtn .btnRound {
+  height: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #5846f9;
 }
 
 .tech {
@@ -495,6 +565,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 2px 6px #b1b1b1;
 }
 .pricing .priceMainContainer .priceContainer .pct2 {
   background-color: blue;
