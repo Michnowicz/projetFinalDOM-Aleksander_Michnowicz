@@ -78,22 +78,6 @@ a {
   text-align: center;
 }
 
-.underline {
-  background-color: #5846f9;
-  height: 4px;
-  width: 52px;
-  margin-top: 12px;
-}
-
-.select {
-  border-bottom: 3px solid #444444 !important;
-}
-
-.selected {
-  position: relative !important;
-  display: block !important;
-}
-
 nav {
   background-color: rgba(62, 47, 192, 0.7882352941);
   color: white;
@@ -104,6 +88,16 @@ nav {
   width: 100%;
   padding: 28px 0px 28px 0px;
   z-index: 100;
+}
+nav .home::before {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background-color: white;
+  content: " ";
+  top: 12px;
+  left: 52px;
 }
 nav a {
   color: white;
@@ -122,26 +116,49 @@ nav button {
   gap: 1.9rem;
   font-weight: bold;
 }
-.navbar ul {
+.navbar .drop {
   margin: 0;
   padding: 0;
+  position: relative;
+  list-style-type: none;
 }
-.navbar ul a {
+.navbar .drop a {
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
-.navbar ul a .arrow {
-  height: 7px;
-  width: 7px;
+.navbar .drop a .arrow {
+  height: 6px;
+  width: 6px;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   rotate: 45deg;
   position: relative;
-  bottom: 2px;
+  transition: rotate 0.1s;
 }
-.navbar ul li {
-  display: none;
+.navbar .drop li {
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.navbar .drop li:nth-of-type(1) {
+  top: 40px;
+}
+.navbar .drop li:nth-of-type(2) {
+  top: 80px;
+}
+.navbar .drop li:nth-of-type(3) {
+  top: 120px;
+}
+.navbar .drop li:nth-of-type(4) {
+  top: 160px;
+}
+.navbar .drop li a {
+  color: black;
 }
 
 .navIcon {
@@ -149,13 +166,6 @@ nav button {
   font-weight: 500;
   letter-spacing: 0.13rem;
   margin-left: 76px;
-}
-
-.navHover::before {
-  width: 10px;
-  height: 4px;
-  background-color: white;
-  content: test;
 }
 
 header {
@@ -1040,11 +1050,148 @@ footer .footerLink a i {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .fill {
   background-color: #5846f9 !important;
+}
+
+.underline {
+  background-color: #5846f9;
+  height: 4px;
+  width: 52px;
+  margin-top: 12px;
+}
+
+.select {
+  border-bottom: 3px solid #444444 !important;
+}
+
+.selected {
+  position: relative !important;
+  display: block !important;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .underline {
+    width: 42px;
+  }
+  .titleP1 {
+    padding: 0 !important;
+    margin-top: 0.8rem !important;
+    font-size: 0.87rem !important;
+    line-height: 1.2rem !important;
+  }
+  nav {
+    padding: 1.2rem 0px 1.2rem 0px;
+  }
+  nav .navIcon {
+    margin-left: 52px;
+    font-size: 1.6rem;
+  }
+  nav .navbar .bar .home::before {
+    width: 44px;
+    left: 40px;
+  }
+  nav .navbar .bar a {
+    font-size: 0.8rem;
+  }
+  nav .btnWhite {
+    margin-right: 62px;
+    padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+  header {
+    height: 99vh;
+    padding: 11.5rem 10rem 0 10rem;
+  }
+  header .headerTitle h1 {
+    font-size: 2.7rem;
+    line-height: 3.4rem;
+    margin-bottom: 1.4rem;
+  }
+  header .headerTitle .btnWhite2 {
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+  header .headerImg img {
+    height: 380px;
+  }
+  .voluptatem {
+    padding: 5.875rem 3.75rem 0 3.75rem;
+    height: 73vh;
+  }
+  .voluptatem .voluptatemText h2 {
+    font-size: 1.65rem;
+    line-height: 2rem;
+  }
+  .voluptatem .voluptatemText .voluptatemP1 {
+    font-size: 0.74rem;
+  }
+  .voluptatem .voluptatemText div {
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+  .voluptatem .voluptatemText div p {
+    font-size: 0.89rem;
+    margin-bottom: 0.6rem;
+  }
+  .voluptatem .voluptatemText div p i {
+    font-size: 1rem;
+  }
+  .voluptatem .voluptatemText .btnColor {
+    font-size: 0.85rem;
+    padding: 0.5rem 2.1rem 0.5rem 2.1rem;
+    border-radius: 4px;
+  }
+  .voluptatem .voluptatemImg img {
+    height: 350px;
+  }
+  .numbers {
+    height: 34vh;
+  }
+  .numbers .numbersContainer p:first-of-type {
+    font-size: 2.4rem;
+  }
+  .numbers .numbersContainer p:last-of-type {
+    font-size: 0.75rem;
+  }
+  .services {
+    padding: 5rem 3.6rem 0 3.6rem;
+    height: 134vh;
+  }
+  .services .servicesTitle {
+    padding-top: 0;
+  }
+  .services .servicesContainers {
+    padding: 0;
+    gap: 1.25rem;
+  }
+  .services .servicesContainers .sContainer {
+    padding: 5rem 0.75rem 4.375rem 0.75rem;
+    width: 20rem;
+  }
+  .services .servicesContainers .sContainer p:first-of-type {
+    margin-top: 2.4rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+  .services .servicesContainers .sContainer p:last-of-type {
+    font-size: 0.7rem;
+  }
+  .features {
+    padding: 4.625rem 3.75rem 6.25rem 3.75rem;
+  }
+  .features .core .coreImg {
+    height: 63%;
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

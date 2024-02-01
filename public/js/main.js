@@ -10,6 +10,21 @@ btnWhite.addEventListener("mouseover", () => {
 })
 
 
+//navbar Drop
+let navDrop = document.querySelector(".navDrop")
+navDrop.style.cursor = "pointer"
+
+navDrop.addEventListener("click", () => {
+    let arrow = navDrop.querySelector(".arrow")
+    let allLi = document.querySelectorAll(".drop li")
+    console.log(allLi);
+    arrow.classList.toggle("arrowTop")
+    allLi.forEach(li => {
+        li.classList.toggle("hidden")
+    });
+})
+
+
 //bouton hero hover
 let btnWhite2 = document.querySelector(".btnWhite2")
 
@@ -19,7 +34,6 @@ btnWhite2.addEventListener("mouseover", () => {
         btnWhite2.classList.remove("hoverBgWhite")
     })
 })
-
 
 //image hero animation
 let imgHero = document.querySelector(".headerImg img")
