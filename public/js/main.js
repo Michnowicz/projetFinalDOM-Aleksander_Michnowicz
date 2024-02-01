@@ -90,10 +90,10 @@ let carBtn = document.querySelector(".carBtn")
 let width = 0
 if (window.innerWidth > 1400) {
     width = 470
-    console.log("1");
 } else if (window.innerWidth >= 1200 && window.innerWidth < 1500) {
     width = 370
-    console.log("2");
+} else {
+    width = 370
 }
 
 //button click
