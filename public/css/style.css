@@ -418,6 +418,8 @@ header {
   background-color: white;
   padding: 28px 20px 0px 20px;
   height: 200px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px #b1b1b1;
 }
 .testimonials .carousel .carContainer .carText i {
   font-size: 0.95rem;
@@ -447,6 +449,7 @@ header {
   overflow: hidden;
   background-color: white;
   bottom: 38px;
+  box-shadow: 0px 2px 6px #b1b1b1;
 }
 .testimonials .carousel .carContainer .carName div img {
   height: 88px;
@@ -509,7 +512,7 @@ header {
 .tech .techCore .coreTitle p {
   text-align: center;
 }
-.tech .techCore .coreTitle #IA {
+.tech .techCore .coreTitle .IA {
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -526,7 +529,6 @@ header {
   align-items: center;
 }
 .tech .techCore .techCoreContainer .tcDiv .tcImg {
-  background-color: blue;
   height: 214px;
   width: 314px;
   background-position: center;
@@ -1073,7 +1075,7 @@ footer .footerLink a i {
   display: block !important;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px) {
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
   .title {
     font-size: 1.7rem;
   }
@@ -1186,11 +1188,765 @@ footer .footerLink a i {
     font-size: 0.7rem;
   }
   .features {
-    padding: 4.625rem 3.75rem 6.25rem 3.75rem;
+    padding: 4.625rem 3.75rem 5rem 3.75rem;
+  }
+  .features .core .text .coreDiv {
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+  .features .core .text .coreDiv img {
+    height: 34px;
+    margin: 0;
+  }
+  .features .core .text .coreDiv .coreText p:first-of-type {
+    font-size: 1.05rem;
+  }
+  .features .core .text .coreDiv .coreText p:nth-of-type(2) {
+    font-size: 0.85rem;
+    margin: 0;
   }
   .features .core .coreImg {
     height: 63%;
     margin-left: 0;
+  }
+  .testimonials {
+    padding: 4.5rem 3.85rem 5.375rem 3.85rem;
+  }
+  .testimonials .carousel {
+    margin-top: 1.75rem;
+    gap: 3.4rem;
+  }
+  .testimonials .carousel .carContainer {
+    width: 320px;
+  }
+  .testimonials .carousel .carContainer .carText {
+    padding: 20px 18px 0px 18px;
+    height: 160px;
+    border-radius: 4px;
+  }
+  .testimonials .carousel .carContainer .carText i {
+    font-size: 0.8rem;
+  }
+  .testimonials .carousel .carContainer .carText i .fa-solid {
+    font-size: 1.2rem;
+  }
+  .testimonials .carousel .carContainer .carName {
+    padding-left: 1.75rem;
+  }
+  .testimonials .carousel .carContainer .carName div {
+    height: 4.5rem;
+    bottom: 35px;
+    right: 10px;
+  }
+  .testimonials .carousel .carContainer .carName div img {
+    height: 64px;
+  }
+  .testimonials .carousel .carContainer .carName p:first-of-type {
+    font-size: 0.9rem;
+  }
+  .testimonials .carousel .carContainer .carName p:last-of-type {
+    font-size: 0.8rem;
+  }
+  .testimonials .carBtn {
+    gap: 0.375rem;
+  }
+  .testimonials .carBtn .btnRound {
+    height: 0.5rem;
+  }
+  .tech {
+    padding: 4.5rem 3.75rem 5rem 3.75rem;
+  }
+  .tech .techTitle {
+    font-size: 1.65rem;
+    font-weight: 500;
+  }
+  .tech .techBtn {
+    gap: 1rem;
+  }
+  .tech .techBtn button {
+    font-size: 1rem;
+  }
+  .tech .techCore .coreTitle {
+    margin-top: 1.375rem;
+  }
+  .tech .techCore .coreTitle p:first-of-type {
+    font-size: 0.85rem;
+  }
+  .tech .techCore .coreTitle p:nth-of-type(2) {
+    font-size: 1.8rem;
+  }
+  .tech .techCore .techCoreContainer {
+    margin-top: 1.5rem;
+    gap: 7.6rem;
+  }
+  .tech .techCore .techCoreContainer .tcDiv .tcImg {
+    height: 10.5rem;
+    width: 15.25rem;
+  }
+  .tech .techCore .techCoreContainer .tcDiv p:first-of-type {
+    font-size: 1.2rem;
+    margin-top: 6px;
+  }
+  .tech .techCore .techCoreContainer .tcDiv p:last-of-type {
+    font-size: 0.825rem;
+  }
+  .pricing {
+    padding: 5rem 3.75rem 5rem 3.75rem;
+  }
+  .pricing .pricingBtn {
+    margin-top: 2.375rem;
+    padding-left: 0.75rem;
+  }
+  .pricing .pricingBtn p:first-of-type {
+    font-size: 0.875rem;
+  }
+  .pricing .pricingBtn .btnPurple {
+    height: 1.75rem;
+    width: 3rem;
+  }
+  .pricing .pricingBtn .btnPurple button {
+    height: 22px;
+    left: 3px;
+    bottom: 4px;
+  }
+  .pricing .pricingBtn p:nth-of-type(2) {
+    font-size: 0.875rem;
+  }
+  .pricing .priceMainContainer {
+    gap: 1.25rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcTitle {
+    padding: 0.75rem 0 0.75rem 0px;
+  }
+  .pricing .priceMainContainer .priceContainer .pcTitle p {
+    font-size: 0.9rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcTitle .banner {
+    font-size: 0.7rem;
+    left: 6rem;
+    bottom: 0.7rem;
+  }
+  .pricing .priceMainContainer .priceContainer #pct4 {
+    padding: 0;
+  }
+  .pricing .priceMainContainer .priceContainer #pct4 p {
+    position: relative;
+    top: 10px;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText {
+    padding-bottom: 1.75rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText div div {
+    font-size: 1rem;
+    right: 0;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText div i {
+    font-size: 2rem;
+    right: 0;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText div p {
+    top: 0.75rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText p {
+    margin-top: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .pricing .priceMainContainer .priceContainer .btnGradient {
+    font-size: 0.75rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1.75rem 0.5rem 1.75rem;
+  }
+  .faq {
+    padding: 5rem 3.75rem 6.25rem 3.75rem;
+  }
+  .faq .cards {
+    padding: 28px 84px 0 84px;
+    gap: 1.375rem;
+  }
+  .faq .cards .card {
+    padding-bottom: 18px;
+  }
+  .faq .cards .card .cardTitle {
+    margin: 24px 0 0 18px !important;
+  }
+  .faq .cards .card .cardTitle div .question {
+    width: 14px !important;
+    height: 14px !important;
+    border: 2px solid #8576fb !important;
+  }
+  .faq .cards .card .cardTitle div .question .fa-solid {
+    font-size: 0.7rem;
+  }
+  .faq .cards .card .cardTitle div .cTitle {
+    font-size: 0.9rem !important;
+    margin-left: 14px !important;
+  }
+  .faq .cards .card .cardTitle .arrow {
+    margin-right: 32px !important;
+  }
+  .faq .cards .card .cardText {
+    margin: 10px 60px 0 24px !important;
+    font-size: 0.895rem !important;
+  }
+  .contact {
+    padding: 5rem 3.5rem 5.625rem 3.5rem;
+  }
+  .contact .contactBody {
+    margin-top: 1.5rem;
+  }
+  .contact .contactBody div {
+    padding: 24px 0 30px 0 !important;
+  }
+  .contact .contactBody div i {
+    font-size: 1.5rem;
+  }
+  .contact .contactBody div p:first-of-type {
+    margin-top: 0.87rem;
+    font-size: 1rem;
+  }
+  .contact .contactBody div p:nth-of-type(2) {
+    margin-top: 0.5rem;
+    font-size: 0.725rem;
+  }
+  .contact .contactBody .contactBodyAdress {
+    width: 48%;
+  }
+  .contact .contactBody iframe {
+    width: 48%;
+    height: 19.375rem;
+  }
+  .contact .contactBody .contactBodyForm {
+    width: 49%;
+    height: auto;
+  }
+  .contact .contactBody .contactBodyForm form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact .contactBody .contactBodyForm form input {
+    font-size: 0.75rem;
+    padding: 0.625rem 0 0.625rem 0.875rem;
+    border-radius: 4px;
+  }
+  .contact .contactBody .contactBodyForm form textarea {
+    font-size: 0.75rem;
+    padding: 0.625rem 0 0.625rem 0.875rem;
+    border-radius: 4px;
+  }
+  .contact .contactBody .contactBodyForm .btnBlue {
+    font-size: 0.88rem;
+    margin-top: 10px;
+    padding: 10px 18px 10px 18px;
+    border-radius: 4px;
+  }
+  footer .footerContent {
+    margin-top: 42px;
+    padding: 0 58px 38px 58px;
+  }
+  footer .footerContent .footerContainer:first-of-type {
+    width: 16rem;
+  }
+  footer .footerContent .footerContainer:first-of-type div:first-of-type {
+    font-size: 0.725rem;
+    margin-top: 1.4rem;
+  }
+  footer .footerContent .footerContainer:first-of-type div:last-of-type {
+    font-size: 0.725rem;
+    margin-top: 1.4rem;
+  }
+  footer .footerContent ul:first-of-type {
+    margin-left: 1.5rem;
+    width: 10rem;
+  }
+  footer .footerContent ul:nth-of-type(2) {
+    margin-left: 1.5rem;
+  }
+  footer .footerContent ul li {
+    margin-bottom: 1.125rem;
+  }
+  footer .footerContent ul li .arrow {
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+  }
+  footer .footerContent ul li a {
+    font-size: 0.725rem;
+  }
+  footer .footerContent .footerContainer:last-of-type {
+    width: 22rem;
+    margin-left: 4.5rem;
+  }
+  footer .footerContent .footerContainer:last-of-type p {
+    font-size: 0.85rem;
+  }
+  footer .footerContent .footerContainer:last-of-type .subscribe {
+    margin-top: 1.75rem;
+  }
+  footer .footerContent .footerContainer:last-of-type .subscribe input {
+    font-size: 0.85rem;
+    padding: 0.625rem 0.5rem 0.625rem 0;
+  }
+  footer .footerContent .footerContainer:last-of-type .subscribe button {
+    font-size: 0.85rem;
+  }
+  footer .footerLink .link {
+    padding-left: 0;
+    padding-top: 1.25rem;
+  }
+  footer .footerLink .link div {
+    height: 1.75rem;
+  }
+  footer .footerLink .link div i {
+    font-size: 0.85rem;
+  }
+  footer .footerLink a {
+    margin-top: 1.375rem;
+    margin-right: 0.625rem;
+    height: 2.25rem;
+  }
+  footer .footerLink a i {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .underline {
+    width: 42px;
+  }
+  .titleP1 {
+    padding: 0 !important;
+    margin-top: 0.8rem !important;
+    font-size: 0.87rem !important;
+    line-height: 1.2rem !important;
+  }
+  nav {
+    padding: 1.2rem 0px 1.2rem 0px;
+  }
+  nav .navIcon {
+    margin-left: 52px;
+    font-size: 1.6rem;
+  }
+  nav .navbar .bar .home::before {
+    width: 44px;
+    left: 40px;
+  }
+  nav .navbar .bar a {
+    font-size: 0.8rem;
+  }
+  nav .btnWhite {
+    margin-right: 62px;
+    padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+  header {
+    height: 99vh;
+    padding: 11.5rem 5rem 0 5rem;
+  }
+  header .headerTitle h1 {
+    font-size: 2.7rem;
+    line-height: 3.4rem;
+    margin-bottom: 1.4rem;
+  }
+  header .headerTitle .btnWhite2 {
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+  header .headerImg img {
+    height: 380px;
+  }
+  .voluptatem {
+    padding: 5.875rem 3.75rem 0 3.75rem;
+    height: 60vh;
+  }
+  .voluptatem .voluptatemText h2 {
+    font-size: 1.65rem;
+    line-height: 2rem;
+  }
+  .voluptatem .voluptatemText .voluptatemP1 {
+    font-size: 0.74rem;
+  }
+  .voluptatem .voluptatemText div {
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+  .voluptatem .voluptatemText div p {
+    font-size: 0.89rem;
+    margin-bottom: 0.6rem;
+  }
+  .voluptatem .voluptatemText div p i {
+    font-size: 1rem;
+  }
+  .voluptatem .voluptatemText .btnColor {
+    font-size: 0.85rem;
+    padding: 0.5rem 2.1rem 0.5rem 2.1rem;
+    border-radius: 4px;
+  }
+  .voluptatem .voluptatemImg img {
+    height: 300px;
+  }
+  .numbers {
+    height: 34vh;
+  }
+  .numbers .numbersContainer p:first-of-type {
+    font-size: 2.4rem;
+  }
+  .numbers .numbersContainer p:last-of-type {
+    font-size: 0.75rem;
+  }
+  .services {
+    padding: 5rem 3.6rem 5rem 3.6rem;
+    height: fit-content;
+  }
+  .services .servicesTitle {
+    padding-top: 0;
+  }
+  .services .servicesContainers {
+    padding: 0;
+    gap: 1.25rem;
+  }
+  .services .servicesContainers .sContainer {
+    padding: 5rem 0.75rem 4.375rem 0.75rem;
+    width: 20rem;
+  }
+  .services .servicesContainers .sContainer p:first-of-type {
+    margin-top: 2.4rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+  .services .servicesContainers .sContainer p:last-of-type {
+    font-size: 0.7rem;
+  }
+  .features {
+    padding: 4.625rem 3.75rem 5rem 3.75rem;
+    height: fit-content;
+  }
+  .features .core .text .coreDiv {
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+  .features .core .text .coreDiv img {
+    height: 34px;
+    margin: 0;
+  }
+  .features .core .text .coreDiv .coreText p:first-of-type {
+    font-size: 1.05rem;
+  }
+  .features .core .text .coreDiv .coreText p:nth-of-type(2) {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  .features .core .coreImg {
+    height: 63%;
+    margin-left: 0;
+  }
+  .testimonials {
+    padding: 4.5rem 3.85rem 5.375rem 3.85rem;
+  }
+  .testimonials .carousel {
+    margin-top: 1.75rem;
+    gap: 3.4rem;
+  }
+  .testimonials .carousel .carContainer {
+    width: 320px;
+  }
+  .testimonials .carousel .carContainer .carText {
+    padding: 20px 18px 0px 18px;
+    height: 160px;
+    border-radius: 4px;
+  }
+  .testimonials .carousel .carContainer .carText i {
+    font-size: 0.8rem;
+  }
+  .testimonials .carousel .carContainer .carText i .fa-solid {
+    font-size: 1.2rem;
+  }
+  .testimonials .carousel .carContainer .carName {
+    padding-left: 1.75rem;
+  }
+  .testimonials .carousel .carContainer .carName div {
+    height: 4.5rem;
+    bottom: 35px;
+    right: 10px;
+  }
+  .testimonials .carousel .carContainer .carName div img {
+    height: 64px;
+  }
+  .testimonials .carousel .carContainer .carName p:first-of-type {
+    font-size: 0.9rem;
+  }
+  .testimonials .carousel .carContainer .carName p:last-of-type {
+    font-size: 0.8rem;
+  }
+  .testimonials .carBtn {
+    gap: 0.375rem;
+  }
+  .testimonials .carBtn .btnRound {
+    height: 0.5rem;
+  }
+  .tech {
+    padding: 4.5rem 3.75rem 5rem 3.75rem;
+  }
+  .tech .techTitle {
+    font-size: 1.65rem;
+    font-weight: 500;
+  }
+  .tech .techBtn {
+    gap: 1rem;
+  }
+  .tech .techBtn button {
+    font-size: 1rem;
+  }
+  .tech .techCore .coreTitle {
+    margin-top: 1.375rem;
+  }
+  .tech .techCore .coreTitle p:first-of-type {
+    font-size: 0.85rem;
+  }
+  .tech .techCore .coreTitle p:nth-of-type(2) {
+    font-size: 1.8rem;
+  }
+  .tech .techCore .techCoreContainer {
+    margin-top: 1.5rem;
+    gap: 5rem;
+  }
+  .tech .techCore .techCoreContainer .tcDiv .tcImg {
+    height: 10.5rem;
+    width: 15.25rem;
+  }
+  .tech .techCore .techCoreContainer .tcDiv p:first-of-type {
+    font-size: 1.2rem;
+    margin-top: 6px;
+  }
+  .tech .techCore .techCoreContainer .tcDiv p:last-of-type {
+    font-size: 0.825rem;
+  }
+  .pricing {
+    padding: 5rem 3rem 5rem 3rem;
+  }
+  .pricing .pricingBtn {
+    margin-top: 2.375rem;
+    padding-left: 0.75rem;
+  }
+  .pricing .pricingBtn p:first-of-type {
+    font-size: 0.875rem;
+  }
+  .pricing .pricingBtn .btnPurple {
+    height: 1.75rem;
+    width: 3rem;
+  }
+  .pricing .pricingBtn .btnPurple button {
+    height: 22px;
+    left: 3px;
+    bottom: 4px;
+  }
+  .pricing .pricingBtn p:nth-of-type(2) {
+    font-size: 0.875rem;
+  }
+  .pricing .priceMainContainer {
+    gap: 1.25rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcTitle {
+    padding: 1rem 0 1rem 0;
+  }
+  .pricing .priceMainContainer .priceContainer .pcTitle p {
+    font-size: 0.9rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcTitle .banner {
+    font-size: 0.7rem;
+    left: 4.5rem;
+    bottom: 0.7rem;
+  }
+  .pricing .priceMainContainer .priceContainer #pct4 {
+    padding: 0.25rem 0 0.25rem 0;
+  }
+  .pricing .priceMainContainer .priceContainer #pct4 p {
+    position: relative;
+    top: 10px;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText {
+    padding-bottom: 1.75rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText div div {
+    font-size: 1rem;
+    right: 0;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText div i {
+    font-size: 2rem;
+    right: 0;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText div p {
+    top: 0.75rem;
+  }
+  .pricing .priceMainContainer .priceContainer .pcText p {
+    margin-top: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .pricing .priceMainContainer .priceContainer .btnGradient {
+    font-size: 0.75rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1.75rem 0.5rem 1.75rem;
+  }
+  .faq {
+    padding: 5rem 3.75rem 6.25rem 3.75rem;
+  }
+  .faq .cards {
+    padding: 28px 84px 0 84px;
+    gap: 1.375rem;
+  }
+  .faq .cards .card {
+    padding-bottom: 18px;
+  }
+  .faq .cards .card .cardTitle {
+    margin: 24px 0 0 18px !important;
+  }
+  .faq .cards .card .cardTitle div .question {
+    width: 14px !important;
+    height: 14px !important;
+    border: 2px solid #8576fb !important;
+  }
+  .faq .cards .card .cardTitle div .question .fa-solid {
+    font-size: 0.7rem;
+  }
+  .faq .cards .card .cardTitle div .cTitle {
+    font-size: 0.9rem !important;
+    margin-left: 14px !important;
+  }
+  .faq .cards .card .cardTitle .arrow {
+    margin-right: 32px !important;
+  }
+  .faq .cards .card .cardText {
+    margin: 10px 60px 0 24px !important;
+    font-size: 0.895rem !important;
+  }
+  .contact {
+    padding: 5rem 3.5rem 5.625rem 3.5rem;
+  }
+  .contact .contactBody {
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+  }
+  .contact .contactBody div {
+    padding: 24px 0 30px 0 !important;
+  }
+  .contact .contactBody div i {
+    font-size: 1.5rem;
+  }
+  .contact .contactBody div p:first-of-type {
+    margin-top: 0.87rem;
+    font-size: 1rem;
+  }
+  .contact .contactBody div p:nth-of-type(2) {
+    margin-top: 0.5rem;
+    font-size: 0.725rem;
+  }
+  .contact .contactBody .contactBodyAdress {
+    width: 48%;
+  }
+  .contact .contactBody iframe {
+    width: 48%;
+    height: 19.375rem;
+  }
+  .contact .contactBody .contactBodyForm {
+    width: 49%;
+    height: auto;
+  }
+  .contact .contactBody .contactBodyForm form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact .contactBody .contactBodyForm form input {
+    font-size: 0.75rem;
+    padding: 0.625rem 0 0.625rem 0.875rem;
+    border-radius: 4px;
+  }
+  .contact .contactBody .contactBodyForm form textarea {
+    font-size: 0.75rem;
+    padding: 0.625rem 0 0.625rem 0.875rem;
+    border-radius: 4px;
+  }
+  .contact .contactBody .contactBodyForm .btnBlue {
+    font-size: 0.88rem;
+    margin-top: 10px;
+    padding: 10px 18px 10px 18px;
+    border-radius: 4px;
+  }
+  footer .footerContent {
+    margin-top: 42px;
+    padding: 0 58px 38px 58px;
+  }
+  footer .footerContent .footerContainer:first-of-type {
+    width: 16rem;
+  }
+  footer .footerContent .footerContainer:first-of-type div:first-of-type {
+    font-size: 0.725rem;
+    margin-top: 1.4rem;
+  }
+  footer .footerContent .footerContainer:first-of-type div:last-of-type {
+    font-size: 0.725rem;
+    margin-top: 1.4rem;
+  }
+  footer .footerContent ul:first-of-type {
+    margin-left: 1.5rem;
+    width: 10rem;
+  }
+  footer .footerContent ul:nth-of-type(2) {
+    margin-left: 1.5rem;
+  }
+  footer .footerContent ul li {
+    margin-bottom: 1.125rem;
+  }
+  footer .footerContent ul li .arrow {
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+  }
+  footer .footerContent ul li a {
+    font-size: 0.725rem;
+  }
+  footer .footerContent .footerContainer:last-of-type {
+    width: 22rem;
+    margin-left: 4.5rem;
+  }
+  footer .footerContent .footerContainer:last-of-type p {
+    font-size: 0.85rem;
+  }
+  footer .footerContent .footerContainer:last-of-type .subscribe {
+    margin-top: 1.75rem;
+  }
+  footer .footerContent .footerContainer:last-of-type .subscribe input {
+    font-size: 0.85rem;
+    padding: 0.625rem 0.5rem 0.625rem 0;
+  }
+  footer .footerContent .footerContainer:last-of-type .subscribe button {
+    font-size: 0.85rem;
+  }
+  footer .footerLink .link {
+    padding-left: 0;
+    padding-top: 1.25rem;
+  }
+  footer .footerLink .link div {
+    height: 1.75rem;
+  }
+  footer .footerLink .link div i {
+    font-size: 0.85rem;
+  }
+  footer .footerLink a {
+    margin-top: 1.375rem;
+    margin-right: 0.625rem;
+    height: 2.25rem;
+  }
+  footer .footerLink a i {
+    font-size: 0.85rem;
   }
 }
 

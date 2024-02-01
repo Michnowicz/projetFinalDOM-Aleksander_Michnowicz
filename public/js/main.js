@@ -87,6 +87,14 @@ for (let i = 0; i < allServicesTitle.length; i++) {
 
 //carousel
 let carBtn = document.querySelector(".carBtn")
+let width = 0
+if (window.innerWidth > 1400) {
+    width = 470
+    console.log("1");
+} else if (window.innerWidth >= 1200 && window.innerWidth < 1500) {
+    width = 370
+    console.log("2");
+}
 
 //button click
 carBtn.addEventListener("click", (e) => {
@@ -109,7 +117,7 @@ carBtn.addEventListener("click", (e) => {
         let pos = 0
         //multiply movement of each div by the index of allBtnRound
         if (allBtnRound[i].className.includes("fill")) {
-            pos = 470*i
+            pos = width*i
             allcarContainer.forEach(carContainer => {
                 carContainer.style.right = `${pos}px`
             });
@@ -119,23 +127,23 @@ carBtn.addEventListener("click", (e) => {
     
 })
 
-//translate each div each 8 seconds
-setInterval(() => {
-    let allcarContainer = document.querySelectorAll(".carContainer")
-    //save the position of the first div
-    let translation = parseInt(allcarContainer[0].style.right)
+// //translate each div each 8 seconds
+// setInterval(() => {
+//     let allcarContainer = document.querySelectorAll(".carContainer")
+//     //save the position of the first div
+//     let translation = parseInt(allcarContainer[0].style.right)
 
-    let pos = 0
-    if (isNaN(translation) || translation >= 1880) {
-        //if pos isNaN or is equal to the 5th button pushed
-        pos = 470 
-    } else {
-        pos = 470 + translation
-    }
-    allcarContainer.forEach(carContainer => {
-        carContainer.style.right = `${pos}px`
-    });
-}, 8000);
+//     let pos = 0
+//     if (isNaN(translation) || translation >= width*4) {
+//         //if pos isNaN or is equal to the 5th button pushed
+//         pos = width 
+//     } else {
+//         pos = width + translation
+//     }
+//     allcarContainer.forEach(carContainer => {
+//         carContainer.style.right = `${pos}px`
+//     });
+// }, 8000);
 
 
 
