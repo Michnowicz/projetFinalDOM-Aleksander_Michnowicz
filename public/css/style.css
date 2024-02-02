@@ -1022,6 +1022,16 @@ footer .footerLink a i {
   color: white;
 }
 
+.barHover::before {
+  position: absolute;
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background-color: white;
+  content: " ";
+  top: 65%;
+}
+
 .hoverWhite {
   border: 2px solid #ffffff;
 }
@@ -1983,11 +1993,19 @@ footer .footerLink a i {
   nav {
     padding: 1.2rem 0px 1.2rem 0px;
     flex-wrap: wrap;
+    gap: 2rem;
   }
   nav .navIcon {
     margin-left: 4rem;
     font-size: 1.6rem;
-    width: 80vw;
+  }
+  nav .navbar {
+    justify-content: center;
+    width: 100%;
+  }
+  nav .navbar .bar {
+    gap: 1rem;
+    justify-content: center;
   }
   nav .navbar .bar .home::before {
     width: 44px;
@@ -2467,15 +2485,19 @@ footer .footerLink a i {
   nav {
     padding: 1.2rem 0px 1.2rem 0px;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
   }
   nav .navIcon {
     margin-left: 52px;
     font-size: 1.6rem;
-    width: 70vw;
+  }
+  nav .navbar {
+    justify-content: center;
+    width: 100%;
   }
   nav .navbar .bar {
-    gap: 0.5rem;
+    gap: 1rem;
+    justify-content: center;
   }
   nav .navbar .bar .home::before {
     width: 44px;

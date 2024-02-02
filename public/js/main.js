@@ -19,9 +19,25 @@ window.addEventListener("resize", () => {
 let burger = document.querySelector(".burger")
 burger.addEventListener("click", () => {
     navbar.classList.toggle("hidden")
-    navbar.classList.toggle("test")
-    navbar.querySelector(".bar").classList.toggle("test")
 })
+
+
+//hover navHover
+let allNavHover = document.querySelectorAll(".navHover")
+let bar = document.querySelector(".bar")
+
+bar.addEventListener("mouseover", (e) => {
+    if (e.target.className.includes("navHover")) {
+        e.target.classList.add("barHover")
+        if (e.target == allNavHover[0]) {
+            e.target.classList.remove("barHover")
+        } 
+        e.target.addEventListener("mouseout", () => {
+            e.target.classList.remove("barHover")
+        })
+    }
+})
+
 
 //bouton navbar hover
 let btnWhite = document.querySelector(".btnWhite")
