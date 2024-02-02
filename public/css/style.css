@@ -168,6 +168,21 @@ nav button {
   margin-left: 76px;
 }
 
+.burger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  margin-right: 2rem;
+  border-radius: 4px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.burger i {
+  font-size: 1.7rem;
+}
+
 header {
   height: 103vh;
   background-image: url("../img/hero-bg.jpg");
@@ -405,8 +420,7 @@ header {
   display: flex;
   gap: 70px;
   overflow: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 4px;
 }
 .testimonials .carousel .carContainer {
   width: 400px;
@@ -1022,7 +1036,7 @@ footer .footerLink a i {
 }
 
 .btnMove {
-  left: 32px !important;
+  left: 46% !important;
 }
 
 .purple {
@@ -1214,10 +1228,11 @@ footer .footerLink a i {
   }
   .testimonials .carousel {
     margin-top: 1.75rem;
-    gap: 3.4rem;
+    gap: 2rem;
+    padding-left: 0.4rem;
   }
   .testimonials .carousel .carContainer {
-    width: 320px;
+    width: 330px;
   }
   .testimonials .carousel .carContainer .carText {
     padding: 20px 18px 0px 18px;
@@ -1526,10 +1541,10 @@ footer .footerLink a i {
   }
   nav {
     padding: 1.2rem 0px 1.2rem 0px;
+    font-size: 1.6rem;
   }
   nav .navIcon {
     margin-left: 52px;
-    font-size: 1.6rem;
   }
   nav .navbar .bar .home::before {
     width: 44px;
@@ -1654,7 +1669,7 @@ footer .footerLink a i {
     gap: 3.4rem;
   }
   .testimonials .carousel .carContainer {
-    width: 320px;
+    width: 400px;
   }
   .testimonials .carousel .carContainer .carText {
     padding: 20px 18px 0px 18px;
@@ -1950,6 +1965,9 @@ footer .footerLink a i {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .burger {
+    display: flex;
+  }
   .title {
     font-size: 1.7rem;
   }
@@ -1964,10 +1982,12 @@ footer .footerLink a i {
   }
   nav {
     padding: 1.2rem 0px 1.2rem 0px;
+    flex-wrap: wrap;
   }
   nav .navIcon {
-    margin-left: 52px;
+    margin-left: 4rem;
     font-size: 1.6rem;
+    width: 80vw;
   }
   nav .navbar .bar .home::before {
     width: 44px;
@@ -1977,7 +1997,7 @@ footer .footerLink a i {
     font-size: 0.8rem;
   }
   nav .btnWhite {
-    margin-right: 62px;
+    margin-right: 0px;
     padding: 0.4rem 1.2rem 0.4rem 1.2rem;
     font-size: 0.75rem;
     border-radius: 4px;
@@ -2106,7 +2126,11 @@ footer .footerLink a i {
     margin-left: 0;
   }
   .testimonials {
-    padding: 4.5rem 3.85rem 5.375rem 3.85rem;
+    padding: 4.5rem 1rem 5.375rem 1rem;
+  }
+  .testimonials .testimonialsTitle .titleP1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .testimonials .carousel {
     margin-top: 1.75rem;
@@ -2425,6 +2449,9 @@ footer .footerLink a i {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .burger {
+    display: flex;
+  }
   .title {
     font-size: 1.7rem;
   }
@@ -2439,10 +2466,16 @@ footer .footerLink a i {
   }
   nav {
     padding: 1.2rem 0px 1.2rem 0px;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   nav .navIcon {
     margin-left: 52px;
     font-size: 1.6rem;
+    width: 70vw;
+  }
+  nav .navbar .bar {
+    gap: 0.5rem;
   }
   nav .navbar .bar .home::before {
     width: 44px;
@@ -2452,7 +2485,7 @@ footer .footerLink a i {
     font-size: 0.8rem;
   }
   nav .btnWhite {
-    margin-right: 62px;
+    margin-right: 0px;
     padding: 0.4rem 1.2rem 0.4rem 1.2rem;
     font-size: 0.75rem;
     border-radius: 4px;
@@ -2598,9 +2631,10 @@ footer .footerLink a i {
   .testimonials .carousel {
     margin-top: 1.75rem;
     gap: 3.4rem;
+    padding: 0 2rem 0 2rem;
   }
   .testimonials .carousel .carContainer {
-    width: 320px;
+    width: 380px;
   }
   .testimonials .carousel .carContainer .carText {
     padding: 20px 18px 0px 18px;
@@ -2631,10 +2665,10 @@ footer .footerLink a i {
     font-size: 0.8rem;
   }
   .testimonials .carBtn {
-    gap: 0.375rem;
+    gap: 0.5rem;
   }
   .testimonials .carBtn .btnRound {
-    height: 0.5rem;
+    height: 2rem;
   }
   .tech {
     padding: 4.5rem 3.75rem 5rem 3.75rem;
@@ -2693,6 +2727,9 @@ footer .footerLink a i {
     height: 22px;
     left: 3px;
     bottom: 4px;
+  }
+  .pricing .pricingBtn .btnPurple button .btnMove {
+    left: 28px !important;
   }
   .pricing .pricingBtn p:nth-of-type(2) {
     font-size: 0.875rem;

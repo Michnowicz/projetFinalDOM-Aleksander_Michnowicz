@@ -1,4 +1,28 @@
 
+
+//burger btn
+let navbar = document.querySelector(".navbar")
+if (window.innerWidth < 992) {
+    navbar.classList.add("hidden")
+} else {
+    navbar.classList.remove("hidden")
+}
+window.addEventListener("resize", () => {
+    if (window.innerWidth < 992) {
+        navbar.classList.add("hidden")
+        
+    } else {
+        navbar.classList.remove("hidden")
+    }
+})
+
+let burger = document.querySelector(".burger")
+burger.addEventListener("click", () => {
+    navbar.classList.toggle("hidden")
+    navbar.classList.toggle("test")
+    navbar.querySelector(".bar").classList.toggle("test")
+})
+
 //bouton navbar hover
 let btnWhite = document.querySelector(".btnWhite")
 
@@ -45,13 +69,12 @@ imgHero.animate([
     { transform: 'translateY(0px)' },
     { transform: 'translateY(5px)' },
     { transform: 'translateY(0px)' }
-  ], {
+], {
     // sync options
     duration: 4000,
     // direction: "alternate",
     iterations: Infinity
-
-  });
+});
 
 
 //bouton gradient hover section voluptatem
@@ -82,19 +105,38 @@ for (let i = 0; i < allServicesTitle.length; i++) {
             icon.style.color = colorPalette[i]
         })
     })
-    
 }
 
 //carousel
 let carBtn = document.querySelector(".carBtn")
 let width = 0
+
+
 if (window.innerWidth > 1400) {
-    width = 470
+    width = 34.5
 } else if (window.innerWidth >= 1200 && window.innerWidth < 1500) {
-    width = 370
-} else {
-    width = 370
+    width = 33.8
+} else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
+    width = 52.5
+} else if (window.innerWidth >= 768 && window.innerWidth < 992) {
+    width = 51
+}else if (window.innerWidth >= 576 && window.innerWidth < 768) {
+    width = 118
 }
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 1400) {
+        width = 34.5
+    } else if (window.innerWidth >= 1200 && window.innerWidth < 1500) {
+        width = 33.8
+    } else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
+        width = 52.5
+    } else if (window.innerWidth >= 768 && window.innerWidth < 992) {
+        width = 51
+    }else if (window.innerWidth >= 576 && window.innerWidth < 768) {
+        width = 118
+    }
+})
 
 //button click
 carBtn.addEventListener("click", (e) => {
@@ -119,7 +161,7 @@ carBtn.addEventListener("click", (e) => {
         if (allBtnRound[i].className.includes("fill")) {
             pos = width*i
             allcarContainer.forEach(carContainer => {
-                carContainer.style.right = `${pos}px`
+                carContainer.style.right = `${pos}%`
             });
             console.log(pos);
         }
@@ -127,23 +169,23 @@ carBtn.addEventListener("click", (e) => {
     
 })
 
-// //translate each div each 8 seconds
-// setInterval(() => {
-//     let allcarContainer = document.querySelectorAll(".carContainer")
-//     //save the position of the first div
-//     let translation = parseInt(allcarContainer[0].style.right)
+//translate each div each 8 seconds
+setInterval(() => {
+    let allcarContainer = document.querySelectorAll(".carContainer")
+    //save the position of the first div
+    let translation = parseInt(allcarContainer[0].style.right)
 
-//     let pos = 0
-//     if (isNaN(translation) || translation >= width*4) {
-//         //if pos isNaN or is equal to the 5th button pushed
-//         pos = width 
-//     } else {
-//         pos = width + translation
-//     }
-//     allcarContainer.forEach(carContainer => {
-//         carContainer.style.right = `${pos}px`
-//     });
-// }, 8000);
+    let pos = 0
+    if (isNaN(translation) || translation >= width*4) {
+        //if pos isNaN or is equal to the 5th button pushed
+        pos = width 
+    } else {
+        pos = width + translation
+    }
+    allcarContainer.forEach(carContainer => {
+        carContainer.style.right = `${pos}%`
+    });
+}, 8000);
 
 
 

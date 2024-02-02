@@ -3,7 +3,9 @@
 @media screen and (min-width: 768px) and (max-width: 991px)
 
     ///// burgerbutton /////
-
+    .burger
+        display: flex
+        
 
     ///// global /////
     .title
@@ -19,11 +21,14 @@
     ///// navbar /////
     nav
         padding: 1.2rem 0px 1.2rem 0px
+        flex-wrap: wrap
         .navIcon
-           margin-left: 52px
-           font-size: 1.6rem
+            margin-left: 4rem
+            font-size: 1.6rem
+            width: 80vw
 
         .navbar
+            //display: none
             .bar
                 .home
                     &::before
@@ -33,7 +38,7 @@
                     font-size: 0.8rem
 
         .btnWhite
-            margin-right: 62px
+            margin-right: 0px
             padding: 0.4rem 1.2rem 0.4rem 1.2rem
             font-size: 0.75rem
             border-radius: 4px
@@ -151,7 +156,11 @@
 
     ///// testimonials /////
     .testimonials
-        padding: 4.5rem 3.85rem 5.375rem 3.85rem
+        padding: 4.5rem 1rem 5.375rem 1rem
+        .testimonialsTitle
+            .titleP1
+                padding-left: 3rem
+                padding-right: 3rem
         .carousel
             margin-top: 1.75rem
             gap: 3.4rem
